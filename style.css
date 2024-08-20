@@ -329,6 +329,7 @@ ul,li,a{
 
 .icons{
     display: flex;
+    margin-top: 20px;
 }
 
 .icons a{        
@@ -352,6 +353,28 @@ ul,li,a{
     color: white;
     transition: all 0.3s ease-in-out;
     transform: scale(1.1);
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-ic{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205, 0, 0);
+}
+
+.contact-content {
+    margin-left: 10px;
+    line-height: 1.5;
 }
 
 /* COPY RIGHT */
