@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/lg.ico">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <header class="header-top flex">
@@ -30,7 +31,7 @@
     </header>
     <header class="header-bottom flex">
         <ul class="menu flex">
-            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#"><i class="fa-solid fa-house"></i> TRANG CHỦ</a></li>
             <li><a href="#">MÓN CHAY</a></li>
             <li><a href="#">MÓN MẶN</a></li>
             <li><a href="#">MÓN LẨU</a></li>
@@ -40,6 +41,7 @@
             <li><a href="#">TRÁI CÂY</a></li>
         </ul>
     </header>
+
     <div class="banner">
         <img src="images/banner.png" alt="banner">
     </div>
@@ -86,200 +88,132 @@
             KHÁM PHÁ THỰC ĐƠN CỦA CHÚNG TÔI
         </h2>
     </div>
-
-    <section class="products flex">
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
+    
+    <section class="tab-content active">
+        <section id="home">
+            <section class="products flex">
+                <div class="product">
+                    <div>
+                        <div class="card-header">
+                            <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
+                        </div>
+                        <div class="food-info">
+                            <div class="title">
+                                <p>Bánh mì thịt nướng</p>
+                            </div>
+                            <div class="price">
+                                <span>30.000<sup><u>đ</u></sup></span>
+                            </div>
+                            <button class="buy">Đặt món</button>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
+                <div class="product">
+                    <div>
+                        <div class="card-header">
+                            <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
+                        </div>
+                        <div class="food-info">
+                            <div class="title">
+                                <p>Bánh mì thịt nướng</p>
+                            </div>
+                            <div class="price">
+                                <span>30.000<sup><u>đ</u></sup></span>
+                            </div>
+                            <button class="buy">Đặt món</button>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
+                <div class="product">
+                    <div>
+                        <div class="card-header">
+                            <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
+                        </div>
+                        <div class="food-info">
+                            <div class="title">
+                                <p>Bánh mì thịt nướng</p>
+                            </div>
+                            <div class="price">
+                                <span>30.000<sup><u>đ</u></sup></span>
+                            </div>
+                            <button class="buy">Đặt món</button>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
+            </section>
+        </section>
+        <section id="mon-chay">
+            <section class="products flex">
+                <div class="product">
+                    <div>
+                        <div class="card-header">
+                            <img src="images/nam-dui-ga-chay-toi.jpeg" alt="Bánh mì thịt nướng">
+                        </div>
+                        <div class="food-info">
+                            <div class="title">
+                                <p>Bánh mì thịt nướng</p>
+                            </div>
+                            <div class="price">
+                                <span>30.000<sup><u>đ</u></sup></span>
+                            </div>
+                            <button class="buy">Đặt món</button>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
+                <div class="product">
+                    <div>
+                        <div class="card-header">
+                            <img src="images/nam-dui-ga-chay-toi.jpeg" alt="Bánh mì thịt nướng">
+                        </div>
+                        <div class="food-info">
+                            <div class="title">
+                                <p>Bánh mì thịt nướng</p>
+                            </div>
+                            <div class="price">
+                                <span>30.000<sup><u>đ</u></sup></span>
+                            </div>
+                            <button class="buy">Đặt món</button>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
+            </section>
+        </section>
+        <section id="mon-man">
+            <section class="products flex">
+                <div class="product">
+                    <div>
+                        <div class="card-header">
+                            <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
+                        </div>
+                        <div class="food-info">
+                            <div class="title">
+                                <p>Bánh mì thịt nướng</p>
+                            </div>
+                            <div class="price">
+                                <span>30.000<sup><u>đ</u></sup></span>
+                            </div>
+                            <button class="buy">Đặt món</button>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
+                <div class="product">
+                    <div>
+                        <div class="card-header">
+                            <img src="images/nam-dui-ga-chay-toi.jpeg" alt="Bánh mì thịt nướng">
+                        </div>
+                        <div class="food-info">
+                            <div class="title">
+                                <p>Bánh mì thịt nướng</p>
+                            </div>
+                            <div class="price">
+                                <span>30.000<sup><u>đ</u></sup></span>
+                            </div>
+                            <button class="buy">Đặt món</button>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
-                    </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
-                    </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
-                    </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
-                    </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div>
-                <div class="card-header">
-                    <img src="images/banhmi.png" alt="Bánh mì thịt nướng">
-                </div>
-                <div class="food-info">
-                    <div class="title">
-                        <p>Bánh mì thịt nướng</p>
-                    </div>
-                    <div class="price">
-                        <span>30.000<sup><u>đ</u></sup></span>
-                    </div>
-                    <button class="buy">Đặt món</button>
-                </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </section>
 
     <div class="back-to-top active">
@@ -366,6 +300,8 @@
         </div>
         <div class="copy-right">Copyright 2024 H&M FOOD. All Rights Reserved.</div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/hd-bottom.js"></script>
 </body>
 </html>
