@@ -1,7 +1,7 @@
 // BACK TO TOP 
 window.onload = function() {
     let backToTop = document.querySelector(".back-to-top");
-
+     
     // Kiểm tra vị trí cuộn trang khi tải lại
     if (document.documentElement.scrollTop > 100) {
         backToTop.classList.add("active");
