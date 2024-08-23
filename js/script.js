@@ -2,19 +2,12 @@
 window.onload = function() {
     let backToTop = document.querySelector(".back-to-top");
 
-    // Thêm lớp 'no-transition' để vô hiệu hóa chuyển đổi khi tải lại trang
-    backToTop.classList.add('no-transition');
-
     // Kiểm tra vị trí cuộn trang khi tải lại
     if (document.documentElement.scrollTop > 100) {
         backToTop.classList.add("active");
     } else {
         backToTop.classList.remove("active");
     }
-    //Xóa lớp 'no-transition' sau khi kiểm tra vị trí cuộn
-    setTimeout(function() {
-        backToTop.classList.remove('no-transition');
-    }, 0);
 
     window.onscroll = function() {
         if (document.documentElement.scrollTop > 100) {
@@ -22,5 +15,15 @@ window.onload = function() {
         } else {
             backToTop.classList.remove("active");
         }
+    }
+
+     // Thêm sự kiện click để cuộn lên đầu trang với hiệu ứng mượt mà
+     backToTop.onclick = function(event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết nếu có
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Thêm hiệu ứng cuộn mượt mà
+        });
     }
 }

@@ -239,6 +239,11 @@ ul.menu > li > a:hover::after{
     border: none;
 }
 
+.buy:hover{
+    background-color: rgb(134, 3, 3);
+    color: white;
+}
+
 /* BACK-TO-TOP */
 
 .back-to-top a{
@@ -313,6 +318,11 @@ footer img{
     border-radius: 99px;
     font-weight: 500;
     font-size: 18px;
+}
+
+.form-btn:hover{
+    background-color: rgb(134, 3, 3);
+    color: white;
 }
 
 .form-btn {
