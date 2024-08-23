@@ -199,7 +199,9 @@ ul.menu > li > a:hover::after{
 }
 
 .card-header img{
-    width: 100%;
+    width: 302px;
+    height: 200px;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
