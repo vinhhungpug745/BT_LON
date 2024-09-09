@@ -1,0 +1,76 @@
+@media (max-width: 1072px) {
+    .buy{
+        width: 200px;
+    }
+}
+@media (max-width: 991.98px) {
+    .home-service-item {
+        width: 50%;
+    }
+    .product {
+        width: 33.33%;
+    }
+
+    .buy{
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu{
+        margin-top: 20px;
+    }
+    .product{
+        width: 50%;
+    }
+
+    .search-input {
+        width: 180px;
+    }
+
+    .lg img {
+        max-width: 120px;
+    }
+
+    .cha .con {
+        gap: 5px;
+    }
+    .buy{
+        width: 200px;
+        padding: 7px 20px
+    }
+}
+
+@media (max-width: 576px) {
+    .menu{
+        margin-top: 70px;
+    }
+    .product{
+        width: 100%;
+    }
+
+    .product {
+        display: flex;
+        border: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .hd {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 100px;
+    }
+
+    .cha {
+        margin-top: 10px;
+    }
+
+   .buy{
+        width: 100%;
+        padding: 7px 20px
+    }
+}

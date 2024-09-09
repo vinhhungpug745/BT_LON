@@ -87,12 +87,17 @@ header .con{
 }
 
 /* MENU ft animation*/
-ul.menu {
+.menu {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: space-around;
 }
-ul.menu > li > a {
+.menu > li > a {
     display: block;
     padding: 1.5rem;
     color: rgb(0, 0, 0);
@@ -100,7 +105,7 @@ ul.menu > li > a {
     position: relative;
 }
 
-ul.menu > li > a::after{
+.menu > li > a::after{
     content: "";
     height: 2px;
     width: 0;
@@ -111,7 +116,7 @@ ul.menu > li > a::after{
     transition: all .5s ease-in-out;
 }
 
-ul.menu > li > a:hover::after{
+.menu > li > a:hover::after{
     width: 50%;
     transform: translateX(100%);
 }
@@ -132,6 +137,9 @@ ul.menu > li > a:hover::after{
     padding: 0.2rem 3rem;
     display: flex;
     column-gap: 20px;
+    scroll-margin-top: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .home-service-item {
