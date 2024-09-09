@@ -14,6 +14,48 @@
     .buy{
         width: 150px;
     }
+    .ft-top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 120px; /* Adjust logo size for larger tablets */
+    }
+
+    .form {
+        flex-direction: column;
+        width: 100%; /* Ensure the form takes full width */
+        align-items: center;
+    }
+
+    .form-input {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px; 
+    }
+
+    .form-btn {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .ft-bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col, .col-1 {
+        width: 48%; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .icons .icon {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -38,6 +80,35 @@
     .buy{
         width: 200px;
         padding: 7px 20px
+    }
+    .ft-top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form {
+        flex-direction: column;
+    }
+
+    .form-input {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .form-btn {
+        border-radius: 50px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .ft-bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col, .col-1 {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -73,5 +144,15 @@
         width: 100%;
         padding: 7px 20px
     }
+    .logo img {
+        width: 80px;
+    }
+
+    .form-input {
+        width: 100%;
+    }
+    
+    .form-btn {
+        width: 100%;
+    }
 }
-/* end */
