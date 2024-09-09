@@ -455,3 +455,84 @@ ul,li,a{
     background: #f3f5f7;
     color: #888;
 }
+
+/* Tablet (kích thước từ 431px đến 755px) */
+@media screen and (max-width: 755px) and (min-width: 431px) {
+    /* Điều chỉnh header */
+    header img {
+        width: 140px;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    /* Điều chỉnh sản phẩm */
+    .product {
+        width: 48%; /* Hiển thị 2 sản phẩm trên một dòng */
+    }
+
+    .banner img {
+        height: 400px; /* Điều chỉnh chiều cao của banner */
+    }
+
+    .home-service-item {
+        width: 48%; /* Điều chỉnh dịch vụ trên tablet */
+    }
+
+    .footer img {
+        width: 250px;
+    }
+
+    /* Điều chỉnh padding và khoảng cách */
+    .home-title {
+        font-size: 18px;
+    }
+}
+
+/* Mobile (kích thước từ 0px đến 430px) */
+@media screen and (max-width: 430px) {
+    /* Điều chỉnh header */
+    header img {
+        width: 120px;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    /* Menu */
+    ul.menu > li > a {
+        padding: 1rem;
+        font-size: 14px;
+    }
+
+    .banner img {
+        height: 250px;
+    }
+
+    /* Điều chỉnh sản phẩm */
+    .product {
+        width: 100%; /* Hiển thị 1 sản phẩm trên một dòng */
+    }
+
+    .home-service-item {
+        width: 100%; /* Hiển thị 1 dịch vụ trên một dòng */
+    }
+
+    /* Điều chỉnh footer */
+    .footer-mid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer img {
+        width: 200px;
+    }
+
+    .buy {
+        width: 100%;
+    }
+}
+
