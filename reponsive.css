@@ -20,12 +20,12 @@
     }
 
     .logo img {
-        width: 120px; /* Adjust logo size for larger tablets */
+        width: 120px;
     }
 
     .form {
         flex-direction: column;
-        width: 100%; /* Ensure the form takes full width */
+        width: 100%; 
         align-items: center;
     }
 
